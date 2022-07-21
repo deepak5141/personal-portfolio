@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width" , initial-scale=1.0>
+    <title>Deepak's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/678ab96fa5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="" logo>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home </a></li>
+                    <li> <a href="#about">About </a></li>
+                    <li> <a href="#services">Services </a></li>
+                    <li> <a href="#portfolio">Portfolio</a> </li>
+                    <li> <a href="#contact">Contact</a></li>
+
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Deepak Kumar</span><br> From India</h1>
+                <img src="images/nits2.jpg">
+
+            </div>
+        </div>
+    </div>
+    <!---------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/nits.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Deepak Kumar a Final Year undergraduate student of Computer Science and 
+                        Engineering Department of National Institute of Technology, Silchar, India.
+                        I'm currently inrolled in 7th Semester of B-Tech program and looking for Software Engineering internship/job.
+                        <br><br>Field of Interests - Machine Learning, Data Science, NLP, Optimization, Network Security
+                        
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span>Web Development</span><br>Designing Web Applications</li>
+                            <li> <span>Machine Learning</span><br>Building ML Models</li>
+                            <li> <span>Android Development</span><br>Building Android/Ios Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li> <span>SERB Summer Research Internship</span><br>Ranked Optimization Algorithm based on
+                                Problem-Wise and Convergence Curve</li>
+                            <li> <span>30 Days of Cloud Program</span><br>Solved Daily challenges on QuickLabs</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> <span>2019-2023</span><br>Bachelor of Technology in Computer Science at NIT
+                                Silchar,India [9.07/10.00]</li>
+                            <li> <span>2017-2019</span><br>Higher Secondary Education at BPS Jehanabad,India [87.60%]</li>
+                            <li> <span>2015-2017</span><br>High School Education at JNV Jehanabad,India [9.2/10.0]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------------------Services------------------------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>From simple to complex, our website design team will create, host, and update the site for you.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Machine Learning</h2>
+                    <p>We deliver and develop advanced machine learning solutions to help enterprises solve many key
+                        business challenges.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-atom"></i>
+                    <h2>Data Science</h2>
+                    <p>We can share and implement data science best practices to drive your decision-making with careful
+                        forecasting and effective root-cause analysis.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------portfolio------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/image-1.png">
+                    <div class="layer">
+                        <h3>CO2 Emission Predictor</h3>
+                        <p>This web based application predicts amount of CO2 produced by the Vehicles</p>
+                        <a href="https://predict-co2-emissions.herokuapp.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image-2.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>Web based personal PortFolio where we can display our projects, provide personal information,
+                            offer some services.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image-3.png">
+                    <div class="layer">
+                        <h3>Cars Selling Price Prediction</h3>
+                        <p>This web based application predicts selling price of cars based on Present Price,Fuel Type and other car features.</p>
+                        <a href="https://predict-cars-selling-price.herokuapp.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-----------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>krdeepak140@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+8058179872</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/deepak-kumar-2686521a0/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/140Cse"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100014651113720"><i class="fa-brands fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square"></i></a>
+
+                    </div>
+                    <a href="images/DeepakKumar_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Deepak. Made with <i class="fa-solid fa-heart"></i> by Deepak Kumar </p>
+        </div>
+
+    </div>
+    <!--------------------------script------------------------------------>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9aq0S6hCkJtzb_Th5p39ZeBJErnRir0_40KAVrj9409UByv3k3C9rvgutIXFR9aTK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
